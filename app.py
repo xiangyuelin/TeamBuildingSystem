@@ -19,7 +19,7 @@ app.register_blueprint(web, url_prefix='/web')
 
 with app.app_context():
     db.create_all()
-    print "ok"
+    #print "ok"
 
 if __name__ == '__main__':
     app.run()
