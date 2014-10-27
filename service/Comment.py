@@ -20,3 +20,8 @@ def add_comment(user_id, activity_id, content):
     db.session.add(comment)
     db.session.commit()
 
+
+def get_all_item_comment(item_id):
+    comments = Comment.query.filter_by(item_id=item_id).all()
+    return comments
+
