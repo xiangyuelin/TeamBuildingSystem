@@ -12,8 +12,8 @@ def get_activity(id):
 
 
 def add_activity(title, type, show, remark, validate_period, created_at, updated_at):
-    acti = Activity(title=title, type=type, show=show, remark=remark, validate_period=validate_period\
-        created_at=created_at, updated_at=updated_at)
+    acti = Activity(title=title, type=type, show=show, remark=remark, validate_period=validate_period, \
+            created_at=created_at, updated_at=updated_at)
     db.session.add(acti)
     db.session.commit()
 
