@@ -66,7 +66,7 @@ class Comment(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     user_id = db.Column(db.Integer)
     activity_id = db.Column(db.Integer)
-    content = db.Column(db.String(20)), nullable=False)
+    content = db.Column(db.String(20), nullable=False)
     created_at = db.Column(db.DateTime, default=datetime.utcnow)
 
 
